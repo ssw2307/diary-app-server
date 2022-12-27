@@ -1,12 +1,12 @@
 const express = require("express");
 const app= express();
 
-
+/*
 const dotenv = require("dotenv");
 dotenv.config();
 const db = require("./db/db")
 const diraySchema = require("./models/DiarySchema");
-
+*/
 
 const cors = require("cors");
 const { default: axios } = require("axios");
@@ -28,7 +28,7 @@ app.get("/",(req,res)=>{
     res.send("000000000")
 })
 
-
+/*
 app.get("/diary/list", async (req,res)=>{
 
     const diaryLIst = await diraySchema.find();
@@ -72,7 +72,7 @@ app.put("/diary/modify/:id",(req,res)=>{
         console.log(err);
     })
 })
-
+*/
 
 
 app.listen(PORT, ()=>{

@@ -6,7 +6,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 const db = require("./db/db")
 const diraySchema = require("./models/DiarySchema");
-*/
+
 
 const cors = require("cors");
 const { default: axios } = require("axios");
@@ -18,7 +18,7 @@ app.use(express.json());
 app.set("port",process.env.PORT || 5000);
 const PORT = app.get("port");
 
-
+*/
 
 
 

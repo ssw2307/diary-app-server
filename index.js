@@ -61,10 +61,12 @@ app.delete("/diary/delete/:id",(req,res)=>{
 
 app.put("/diary/modify/:id",(req,res)=>{
     const id = req.params.id;
-    const contents = req.params.contents;
-    diraySchema.updateOne({id,id},{ $set : {contents:contents} })
+    const contents = req.body.contents;
+    
+    diraySchema.updateOne({_id:id},{ $set : {contents:contents} })
     .then((response)=>{
-        console.log(response);
+        //console.log(response);
+        console.log("update 성공");
     })
     .catch((err)=>{
         console.log(err);

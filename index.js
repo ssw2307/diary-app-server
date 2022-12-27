@@ -26,10 +26,10 @@ const PORT = app.get("port");
 
 
 app.get("/",(req,res)=>{
-    res.send("2222")
+    res.send("333333")
 })
 
-/*
+
 app.get("/diary/list", async (req,res)=>{
 
     const diaryLIst = await diraySchema.find();
@@ -73,7 +73,7 @@ app.put("/diary/modify/:id",(req,res)=>{
         console.log(err);
     })
 })
-*/
+
 
 
 app.listen(PORT, ()=>{

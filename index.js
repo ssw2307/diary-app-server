@@ -6,8 +6,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 const db = require("./db/db")
 
-/*
-const diraySchema = require("./models/DiarySchema");
+//const diraySchema = require("./models/DiarySchema");
 
 
 const cors = require("cors");
@@ -15,7 +14,7 @@ const { default: axios } = require("axios");
 app.use(cors());
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
-*/
+
 
 
 
@@ -28,7 +27,7 @@ const PORT = app.get("port");
 
 
 app.get("/",(req,res)=>{
-    res.send("000000000")
+    res.send("1111111111")
 })
 
 /*

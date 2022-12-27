@@ -13,12 +13,13 @@ const { default: axios } = require("axios");
 app.use(cors());
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
+*/
+
 
 
 app.set("port",process.env.PORT || 5000);
 const PORT = app.get("port");
 
-*/
 
 
 
